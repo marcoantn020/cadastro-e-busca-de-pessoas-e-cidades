@@ -10,7 +10,7 @@ export const Dashboard: React.FC<IDashboardProps> = () => {
       titulo='Página inicial'
       barraDeFerramentas={(
         <FerramentaDeDetalhe
-          
+          mostrarBotaoSalvarEFechar
         />
       )}
     > 
