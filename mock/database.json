@@ -2,13 +2,9 @@
   "pessoas": [
     {
       "id": 1,
-      "nome": "Marco",
-      "sobrenome": "Antonio"
-    },
-    {
-      "id": 2,
-      "nome": "Fulano",
-      "sobrenome": "Da Silva"
+      "email": "marco@email.com",
+      "cidadeId": 1,
+      "nomeCompleto": "Marco Antonio"
     }
   ],
   "cidades": []
