@@ -11,7 +11,7 @@ interface IThemeContextData {
 
 const ThemeContext = createContext({} as IThemeContextData)
 
-export const useAppThemeContent = () => {
+export const useAppThemeContext = () => {
   return useContext(ThemeContext)
 }
 
