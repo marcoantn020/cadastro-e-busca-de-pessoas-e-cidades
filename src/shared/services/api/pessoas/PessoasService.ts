@@ -28,7 +28,7 @@ const getAll = async (page = 1, filter = ''): Promise<TPessoaComTotalCount | Err
     if(data) {
       return {
         data,
-        totalCount: Number(headers['x-total-count']) || Environment.LIMITE_DE_LINHAS
+        totalCount: Number(headers['x-total-count']) || 0
       }
     }
     return new Error('Erro ao listar registros.')
