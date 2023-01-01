@@ -11,6 +11,7 @@ export const Dashboard: React.FC<IDashboardProps> = () => {
       barraDeFerramentas={(
         <FerramentaDeDetalhe
           mostrarBotaoSalvarEFechar
+          mostrarBotaoVoltar={false}
         />
       )}
     > 
