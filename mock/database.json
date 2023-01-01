@@ -1,0 +1,14 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Marco",
+      "sobrenome": "Antonio"
+    },
+    {
+      "id": 2,
+      "nome": "Fulano",
+      "sobrenome": "Da Silva"
+    }
+  ]
+}
