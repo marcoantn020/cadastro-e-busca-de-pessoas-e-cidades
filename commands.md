@@ -7,7 +7,8 @@
 - yarn add @mui/material @emotion/react @emotion/styled
   - colocar no html os estilos de fonte e icones
 - yarn add @mui/icons-material
-- yarn add json-server
+- yarn add -D json-server
+- yarn add axios
 
 ### Atualizando o react
 - yarn add react react-dom
