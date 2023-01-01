@@ -76,7 +76,8 @@ const updateById = async (id: number, dados: IDetalhePessoa): Promise<void | Err
 
 const deleteById = async (id: number): Promise<void | Error> => {
   try {
-    await Api.delete(`/pessoas?id=${id}`)
+    const urlDel = `/pessoas/${id}`
+    await Api.delete(urlDel)
   } catch (error) {
     console.error(error)
     return new Error((error as {message: string}).message || 'Erro ao apagar registro.')
