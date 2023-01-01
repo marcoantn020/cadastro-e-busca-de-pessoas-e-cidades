@@ -9,13 +9,13 @@ interface IFerramentaDeDetalheProps {
   mostrarBotaoVoltar?: boolean
   mostrarBotaoApagar?: boolean
   mostrarBotaoSalvar?: boolean
-  mostrarBotaoSalvarEFechar?: boolean
+  mostrarBotaoSalvarEVoltar?: boolean
 
   mostrarBotaoNovoCarregando?: boolean
   mostrarBotaoVoltarCarregando?: boolean
   mostrarBotaoApagarCarregando?: boolean
   mostrarBotaoSalvarCarregando?: boolean
-  mostrarBotaoSalvarEFecharCarregando?: boolean
+  mostrarBotaoSalvarEVoltarCarregando?: boolean
 
   aoClicarEmBotaoNovo?: () => void
   aoClicarEmBotaoVoltar?: () => void
@@ -30,13 +30,13 @@ export const FerramentaDeDetalhe: React.FC<IFerramentaDeDetalheProps> = ({
   mostrarBotaoVoltar = true,
   mostrarBotaoApagar = true,
   mostrarBotaoSalvar = true,
-  mostrarBotaoSalvarEFechar = false,
+  mostrarBotaoSalvarEVoltar = false,
 
   mostrarBotaoNovoCarregando = false,
   mostrarBotaoVoltarCarregando = false,
   mostrarBotaoApagarCarregando = false,
   mostrarBotaoSalvarCarregando = false,
-  mostrarBotaoSalvarEFecharCarregando = false,
+  mostrarBotaoSalvarEVoltarCarregando = false,
 
   aoClicarEmBotaoNovo,
   aoClicarEmBotaoVoltar,
@@ -81,7 +81,7 @@ export const FerramentaDeDetalhe: React.FC<IFerramentaDeDetalheProps> = ({
       {mostrarBotaoSalvarCarregando && (<Skeleton width={100} height={60} />)}
 
 
-      {(mostrarBotaoSalvarEFechar && !mostrarBotaoSalvarEFecharCarregando && !smDown && !mdDown) && (
+      {(mostrarBotaoSalvarEVoltar && !mostrarBotaoSalvarEVoltarCarregando && !smDown && !mdDown) && (
         <Button
           color='primary'
           disableElevation
@@ -98,7 +98,7 @@ export const FerramentaDeDetalhe: React.FC<IFerramentaDeDetalheProps> = ({
             Salvar e Voltar
           </Typography>
         </Button>)}
-      {(mostrarBotaoSalvarEFecharCarregando && !smDown && !mdDown) && (<Skeleton width={180} height={60} />)}
+      {(mostrarBotaoSalvarEVoltarCarregando && !smDown && !mdDown) && (<Skeleton width={180} height={60} />)}
 
 
       {(mostrarBotaoApagar && !mostrarBotaoApagarCarregando) && (
@@ -141,7 +141,7 @@ export const FerramentaDeDetalhe: React.FC<IFerramentaDeDetalheProps> = ({
       {(mostrarBotaoNovoCarregando && !smDown) && (<Skeleton width={100} height={60} />)}
 
       {(mostrarBotaoVoltar &&
-        (mostrarBotaoNovo || mostrarBotaoApagar || mostrarBotaoSalvar || mostrarBotaoSalvarEFechar)) && (
+        (mostrarBotaoNovo || mostrarBotaoApagar || mostrarBotaoSalvar || mostrarBotaoSalvarEVoltar)) && (
         <Divider variant='middle' orientation='vertical' />)}
 
       {(mostrarBotaoVoltar && !mostrarBotaoVoltarCarregando) && (
