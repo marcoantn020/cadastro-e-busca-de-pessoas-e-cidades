@@ -43,7 +43,7 @@ const getById = async (id: number): Promise<IDetalhePessoa | Error> => {
     const urlRelativa = `/pessoas?id=${id}`
     const { data } = await Api.get(urlRelativa)
 
-    if(data) return data
+    if(data) return data[0]
     
     return new Error('Erro ao consultar o registro.')
   } catch (error) {

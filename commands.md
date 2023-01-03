@@ -9,6 +9,7 @@
 - yarn add @mui/icons-material
 - yarn add -D json-server
 - yarn add axios
+- yarn add @unform/web @unform/core
 
 ### Atualizando o react
 - yarn add react react-dom
