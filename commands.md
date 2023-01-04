@@ -10,6 +10,7 @@
 - yarn add -D json-server
 - yarn add axios
 - yarn add @unform/web @unform/core
+- yarn add yup
 
 ### Atualizando o react
 - yarn add react react-dom
