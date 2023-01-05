@@ -89,6 +89,12 @@
       "nomeCompleto": "fulano",
       "email": "fulano@gmail.com",
       "cidadeId": "5"
+    },
+    {
+      "nomeCompleto": "bla bluando",
+      "email": "bbb@mail.com",
+      "cidadeId": 3,
+      "id": 157
     }
   ],
   "cidades": [
@@ -99,6 +105,22 @@
     {
       "id": 2,
       "nome": "Marilia"
+    },
+    {
+      "nome": "Bauru",
+      "id": 3
+    },
+    {
+      "nome": "Lacio",
+      "id": 4
+    },
+    {
+      "nome": "Candido Mota",
+      "id": 5
+    },
+    {
+      "nome": "Pompeia",
+      "id": 6
     }
   ]
 }
