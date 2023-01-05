@@ -90,5 +90,15 @@
       "email": "fulano@gmail.com",
       "cidadeId": "5"
     }
+  ],
+  "cidades": [
+    {
+      "id": 1,
+      "nome": "Vera Cruz"
+    },
+    {
+      "id": 2,
+      "nome": "Marilia"
+    }
   ]
 }
