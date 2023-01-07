@@ -16,5 +16,9 @@ export const Environment = {
   /**
    * Url base do backend da aplicação
    */
-  URL_BASE: 'http://localhost:3333'
+  URL_BASE: 'http://localhost:3333',
+  /**
+   * nome do token salvo no local storage
+   */
+  LOCAL_STORAGE_KEY__ACCESS_TOKEN:'APP_ACCESS_TOKEN'
 }
