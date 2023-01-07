@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useEffect, useMemo, useState } from 'react'
+import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { Environment } from '../environment'
 import { AuthService } from '../services/api/auth/AuthService'
 
@@ -29,8 +29,8 @@ export const AuthProvider: React.FC<IAuthProviderProps> = ({children}) => {
     if(result instanceof Error) {
       return result.message
     } else {
-      localStorage.setItem(Environment.LOCAL_STORAGE_KEY__ACCESS_TOKEN, JSON.stringify(result.accesToken))
-      setAccessToken(result.accesToken)
+      localStorage.setItem(Environment.LOCAL_STORAGE_KEY__ACCESS_TOKEN, JSON.stringify(result))
+      setAccessToken(result.accessToken)
     }
   }, [])
 
@@ -47,3 +47,5 @@ export const AuthProvider: React.FC<IAuthProviderProps> = ({children}) => {
     </AuthContext.Provider>
   )
 }
+
+export const useAuthContext = () => useContext(AuthContext)
